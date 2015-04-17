@@ -1,0 +1,116 @@
+body {
+  background-image: url("../images/hardwood.png");
+  background-repeat: repeat;
+  color: #fff;
+  font-family: 'Graduate', cursive; }
+  body h1 {
+    font-family: 'Graduate', cursive;
+    font-size: 2.3em;
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); }
+
+.fir {
+  padding-top: 20px; }
+  .fir .small-9.columns {
+    height: 420px; }
+
+.small-3.columns.paint {
+  width: 170px;
+  height: 300px;
+  border: solid 4px #fff; }
+
+nav {
+  background-color: rgba(0, 0, 0, 0.3);
+  height: 10%; }
+  nav ul {
+    position: relative;
+    top: 20px;
+    padding-left: 110px; }
+    nav ul li {
+      font-family: 'Graduate', cursive;
+      position: relative;
+      margin: 0 10px;
+      font-size: 1.75em;
+      text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7); }
+
+input {
+  display: inline-block; }
+
+li {
+  display: inline-block; }
+
+.team h1 {
+  color: #fff;
+  text-align: center; }
+.team ul {
+  width: 100%; }
+.team .ui-state-default:first-child {
+  background-color: #E55934; }
+.team .ui-state-default {
+  padding: 8px 0px 8px 0px;
+  border-radius: 20px;
+  background: #00A878;
+  border-radius: 15px;
+  border: none;
+  float: left;
+  margin-bottom: .5em;
+  width: 260px; }
+  .team .ui-state-default h2 {
+    font-size: 1em;
+    color: #fff;
+    font-family: 'Graduate', cursive; }
+  .team .ui-state-default img {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%; }
+.team .bench {
+  display: none;
+  padding: 10px 0px 10px 0px;
+  border-radius: 20px;
+  background-color: #86615C; }
+  .team .bench ul {
+    display: none; }
+  .team .bench h2 {
+    font-size: .75em;
+    color: #fff; }
+
+.team-name {
+  color: #fff; }
+
+form {
+  padding-top: 20px;
+  border-radius: 20px;
+  color: #fff; }
+  form img {
+    z-index: 0; }
+  form input {
+    margin-top: -100px;
+    z-index: 100;
+    width: 50px; }
+  form label {
+    text-align: center;
+    color: #fff;
+    z-index: 100;
+    margin-top: -20px;
+    width: 50px;
+    font-size: 1em; }
+  form div {
+    z-index: 100; }
+
+.games {
+  display: none; }
+
+#special {
+  background-image: url("../images/bball_court.png");
+  background-repeat: no-repeat;
+  background-position: center bottom;
+  width: 100%;
+  height: 100%; }
+
+.something-else {
+  position: relative;
+  top: -80px;
+  left: 25px; }
+
+/*# sourceMappingURL=style.css.map */

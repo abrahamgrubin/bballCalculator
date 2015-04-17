@@ -1,0 +1,528 @@
+<!DOCTYPE html>
+<html lang="en">
+ <!doctype html>
+<html class="no-js" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hoops Genius</title>
+    <link rel="stylesheet" href="css/app.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/foundation-icons.css" />
+    <link href='http://fonts.googleapis.com/css?family=Lora:400,700,400italic' rel='stylesheet' type='text/css'>
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <link href='http://fonts.googleapis.com/css?family=Graduate|Iceland' rel='stylesheet' type='text/css'>
+  </head>
+    
+    
+  <body>
+    
+    <nav>
+      <ul>
+        <li>
+          Home
+        </li>
+        <li>
+          Videos
+        </li>
+        <li>
+          Player Stats
+        </li>
+        <li>
+          Team Stats
+        </li>
+        <li>
+          Blog
+        </li>
+      </ul>
+    </nav>
+    <!--- Player Profiles -->
+
+
+<div class="row fir">
+  <div class="small-9 columns">
+    <!--<h2 id="status2">0, 0</h2>-->
+    <canvas id="special" class="court">
+    </canvas>
+    <!--<iframe width="100%" height="450px" src="https://www.youtube.com/embed/CZQEkElyqAY" frameborder="0" allowfullscreen></iframe>-->
+  </div>
+  <div class="small-3 columns team">
+          <h1>Players</h1>
+         <!-- Starters -->
+         <!-- Starter 1 -->
+         <ul id="sortable">
+          <li class="ui-state-default">
+            <ul class="starter">
+              <li>
+                <img src="images/bird.jpg">
+              </li>
+              <li>
+                <h2>#33</h2>
+              </li>
+              <li>
+               <h2>Larry</h2>
+             </li>
+             <li>
+              <h2>Bird</h2>
+             </li>
+            </ul>
+          </li>
+          <!-- Starter 2 -->
+          <li class="ui-state-default">
+            <ul class="starter">
+              <li>
+                <img src="images/mchale.jpg">
+              </li>
+              <li>
+                <h2>#32</h2>
+              </li>
+              <li>
+               <h2>Kevin</h2>
+             </li>
+             <li>
+              <h2>Mchale</h2>
+             </li>
+            </ul>
+          </li>
+          <!--Starter 3 -->
+          <li class="ui-state-default">
+             <ul class="starter">
+              <li>
+                <img src="images/parish.jpg">
+              </li>
+              <li>
+                <h2>#00</h2>
+              </li>
+              <li>
+               <h2>Robert</h2>
+             </li>
+             <li>
+              <h2>Parish</h2>
+             </li>
+            </ul>
+          </li>
+           <!--Starter 4 -->
+           <li class="ui-state-default">
+             <ul class="starter">
+              <li>
+                <img src="images/dj.jpg">
+              </li>
+              <li>
+                <h2>#3</h2>
+              </li>
+              <li>
+               <h2>Dennis</h2>
+             </li>
+             <li>
+              <h2>Johnson</h2>
+             </li>
+            </ul>
+          </li>
+           <!--Starter 5 -->
+           <li class="ui-state-default">
+             <ul class="starter">
+              <li>
+                <img src="images/ainge.jpg">
+              </li>
+              <li>
+                <h2>#44</h2>
+              </li>
+              <li>
+               <h2>Danny</h2>
+             </li>
+             <li>
+              <h2>Ainge</h2>
+             </li>
+            </ul>
+          </li>
+</div>
+
+    <div class="row shot-chart">
+      <div class="small-12 columns">
+        <form>
+          <!--<h1>STATISTICS</h1>-->
+          <ul>
+            <li class="games">
+
+              <label>Games</label>
+              <input type="number" name="games" id="games" value="1">
+            </li>
+            
+            
+            <!--2 Point Stats -->
+            
+            <li>
+              <img src="images/jersey.png">
+              
+                <label class="something-else">2FGM</label>
+                <input type="number" name="made" id="twoMade" value="0" class="something-else">
+            
+            </li>
+
+            <li>
+              <img src="images/jersey.png">
+              <label class="something-else">2FA</label>
+              <input type="number" name="attempts" id="twoAttempts" value="0" class="something-else">
+            </li>
+             
+          
+            
+            <!-- Three Point Stats -->
+            
+            <li>
+              <img src="images/jersey.png">
+              <label class="something-else">3FGM</label>
+              <input type="number" name="made" id="threeMade" value="0" class="something-else">
+            </li>
+
+            <li>
+              <img src="images/jersey.png">
+              <label class="something-else">3FGA</label>
+              <input type="number" name="attempts" id="threeAttempts" value="0" class="something-else">
+            </li>
+
+      
+            <!-- Rebounding Stats -->
+            
+            <li>
+              <img src="images/jersey.png">
+              <label class="something-else">OREB</label>
+              <input type="number" name="oRebounds" id="oRebounds" value="0" class="something-else">
+            </li>
+
+            <li>
+              <img src="images/jersey.png">
+              <label class="something-else">DREB</label>
+              <input type="number" name="dRebounds" id="dRebounds" value="0" class="something-else">
+            </li>
+
+            <!-- Assists -->
+            <li>
+              <img src="images/jersey.png">
+              <label class="something-else">AST</label>
+              <input type="number" name="assists" id="assists" value="0" class="something-else">
+            </li>
+            <!--Steals-->
+            <li>
+              <img src="images/jersey.png">
+              <label class="something-else">STL</label>
+              <input type="number" name="steals" id="steals" value="0" class="something-else">
+            </li>
+            <!-- Blocks -->
+            <li>
+              <img src="images/jersey.png">
+              <label class="something-else">Blk</label>
+              <input type="number" name="blocks" id="blocks" value="0" class="something-else">
+            </li>
+            <!--Turnovers
+            <li>
+              <img src="images/jersey.png">
+              <label class="something-else">TO</label>
+              <input type="number" name="tunrovers" id="turnovers" value="0" class="something-else">
+            </li>
+            Minutes
+            <li>
+              <img src="images/jersey.png">
+              <label class="something-else">MIN</label>
+              <input type="number" name="minutes" id="Minutes" value="0" class="something-else">
+            </li>
+          </ul>-->
+         <ul class="small-block-grid-3">
+
+           <!--Points-->
+            <li>
+             
+              <span>PTS</span>
+              <div id='points'></div>
+            </li>
+
+            <li>
+              
+              <span>REB</span>
+              <div id='rpg'></div>
+            </li>
+
+             <!--Total Field Goals -->
+            <li>
+              
+              <span>FGM</span>
+              <div id='fgm'></div>
+            </li>
+
+            <li>
+              
+              <span>FGA</span>
+              <div id='fga'></div>
+            </li>
+
+            <li>
+              
+              <span>2FG%</span>
+              <div id='twoP'></div>
+            </li>
+            
+            <li>
+              
+              <span>3FG%</span>
+              <div id='threeP'></div>
+            </li>
+            <!--Effective Field Goal % = (FG + 0.5 * 3P) / FGA-->
+            <li>
+              
+              <span>eFG%</span>
+              <div id='efg'></div>
+            </li>
+
+             <li>
+              
+              <span>AST/TO</span>
+              <div id='atr'></div>
+            </li>
+          </ul>
+        </form>
+      </div>
+      <!--
+      <div class="small-3 columns paint">
+        
+      </div>
+       <div class="small-3 columns team">
+          <h1>Players</h1>
+          Starters
+         Starter 1 
+         <ul id="sortable">
+          <li class="ui-state-default">
+            <ul class="starter">
+              <li>
+                <img src="images/bird.jpg">
+              </li>
+              <li>
+                <h2>#33</h2>
+              </li>
+              <li>
+               <h2>Larry</h2>
+             </li>
+             <li>
+              <h2>Bird</h2>
+             </li>
+            </ul>
+          </li>
+          Starter 2 
+          <li class="ui-state-default">
+            <ul class="starter">
+              <li>
+                <img src="images/mchale.jpg">
+              </li>
+              <li>
+                <h2>#32</h2>
+              </li>
+              <li>
+               <h2>Kevin</h2>
+             </li>
+             <li>
+              <h2>Mchale</h2>
+             </li>
+            </ul>
+          </li>
+          Starter 3 
+          <li class="ui-state-default">
+             <ul class="starter">
+              <li>
+                <img src="images/parish.jpg">
+              </li>
+              <li>
+                <h2>#00</h2>
+              </li>
+              <li>
+               <h2>Robert</h2>
+             </li>
+             <li>
+              <h2>Parish</h2>
+             </li>
+            </ul>
+          </li>
+           Starter 4 
+           <li class="ui-state-default">
+             <ul class="starter">
+              <li>
+                <img src="images/dj.jpg">
+              </li>
+              <li>
+                <h2>#3</h2>
+              </li>
+              <li>
+               <h2>Dennis</h2>
+             </li>
+             <li>
+              <h2>Johnson</h2>
+             </li>
+            </ul>
+          </li>
+           Starter 5 
+           <li class="ui-state-default">
+             <ul class="starter">
+              <li>
+                <img src="images/ainge.jpg">
+              </li>
+              <li>
+                <h2>#44</h2>
+              </li>
+              <li>
+               <h2>Danny</h2>
+             </li>
+             <li>
+              <h2>Ainge</h2>
+             </li>
+            </ul>
+          </li>-->
+
+        <!-- Bench -->
+             <!-- Bench 1 -->
+             
+          <!--<button id="switch">Change Lineup</button>
+          <div class="ben">
+            <li class="ui-state-default">
+              <ul class="bench">
+                <h2>Bench</h2>
+                <li>
+                  <img src="images/atari.jpg">
+                </li>
+                <li>
+                  <h2>#34</h2>
+                </li>
+                <li>
+                 <h2>Rick</h2>
+               </li>
+               <li>
+                <h2>Carlisle</h2>
+               </li>
+              </ul>
+            </li>
+           Bench 2
+          <li class="ui-state-default">
+            <ul class="bench">
+              <li>
+                <img src="images/atari.jpg">
+              </li>
+              <li>
+                <h2>#50</h2>
+              </li>
+              <li>
+               <h2>Greg</h2>
+             </li>
+             <li>
+              <h2>Kite</h2>
+             </li>
+            </ul>
+            Bench 3
+            <li class="ui-state-default">
+             <ul class="bench">
+              <li>
+                <img src="images/atari.jpg">
+              </li>
+              <li>
+                <h2>#5</h2>
+              </li>
+              <li>
+               <h2>Bill</h2>
+             </li>
+             <li>
+              <h2>Walton</h2>
+             </li>
+            </ul>
+          </li>
+             Bench 4 
+
+              <li class="ui-state-default">
+               <ul class="bench">
+                <li>
+                  <img src="images/atari.jpg">
+                </li>
+                <li>
+                  <h2>#11</h2>
+                </li>
+                <li>
+                 <h2>Sam</h2>
+               </li>
+               <li>
+                <h2>Vincent</h2>
+               </li>
+              </ul>
+             </li>
+             Bench 5 
+            <li class="ui-state-default">
+               <ul class="bench">
+                <li>
+                  <img src="images/atari.jpg">
+                </li>
+                <li>
+                  <h2>#8</h2>
+                </li>
+                <li>
+                 <h2>Scott</h2>
+               </li>
+               <li>
+                <h2>Wedman</h2>
+               </li>
+              </ul>
+            </li>
+          </ul>
+        </div>-->
+    </div>
+  </div>
+</div>
+
+    <!--<ul class="computed">-->
+      <!--<li>
+        <span>2 Point Field Goal Attempts Per Game</span>
+        <div id='twoA'></div>
+      </li>
+
+       <li>
+        <span>2 Point Field Goals Made Per Game</span>
+      <div id='twoM'></div>
+      
+       <li>
+        <span>3 Point Attempts Per Game</span>
+        <div id='threeA'></div>
+      </li>
+       <li>
+        <span>3 point Made Per Game</span>
+        <div id='threeM'></div>
+      </li>-->
+      
+      
+     <!-- <li>
+        <span>Points Per Game</span>
+        <div id='ppg'></div>
+       </li>
+       <li>
+        <span>Offensive Rebounds Per Game</span>
+        <div id='orpg'></div>
+       </li>
+
+      <li>
+        <span>Defensive Rebounds Per Game</span>
+        <div id='drpg'></div>
+      </li>
+
+      <li>
+        <span>Assists Per Game</span>
+        <div id='apg'></div>
+      </li>
+      <li>
+        <span>Steals Per Game</span>
+        <div id='spg'></div>
+      </li>
+      <li>
+        <span>Blocks Per Game</span>
+        <div id='bpg'></div>
+      </li>
+    </ul>-->
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/themes/smoothness/jquery-ui.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.3/jquery-ui.min.js"></script>
+    <script type="text/javascript" src="js/input.js"></script>
+  </body>
+
+  </html>
