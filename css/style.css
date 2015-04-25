@@ -106,8 +106,6 @@ form {
   background-image: url("../images/bball_court.png");
   background-repeat: no-repeat;
   background-position: center bottom;
-  width: 100%;
-  height: 100%; }
   cursor: url('../images/make.png'), cell; }
 #special.miss {
   cursor: url('../images/miss.png'), cell; }
