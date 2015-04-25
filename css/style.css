@@ -55,7 +55,8 @@ li {
   border: none;
   float: left;
   margin-bottom: .5em;
-  width: 260px; }
+  width: 260px;
+  cursor: pointer; }
   .team .ui-state-default h2 {
     font-size: 1em;
     color: #fff;
