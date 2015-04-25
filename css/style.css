@@ -22,7 +22,7 @@ body {
 
 nav {
   background-color: rgba(0, 0, 0, 0.3);
-  height: 10%; }
+  height: 85px; }
   nav ul {
     position: relative;
     top: 20px;
