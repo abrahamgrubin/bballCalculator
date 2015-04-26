@@ -291,20 +291,49 @@ $(".court").dblclick(function(){
       
     });
 
-$("#special").click(function(e){ 
-    $('#special').attr('height', $('#special').css('height'));
-    $('#special').attr('width', $('#special').css('width'));
-        var x = e.pageX - this.offsetLeft;
-        var y = e.pageY - this.offsetTop; 
+$(document).keydown(function (e) {
+    if (e.keyCode == 16) {
+        $('#special').addClass('miss');
+    }
+});
+$(document).keyup(function (e) {
+    if (e.keyCode == 16) {
+        $('#special').removeClass('miss');
+    }
+});
 
-         /*var c=document.getElementById("special"); */
-        var ctx= this.getContext("2d"); /*c.getContext("2d");*/
-        ctx.beginPath();
-        ctx.arc(x, y, 10,0, 2*Math.PI);
-        ctx.strokeStyle="#00A878";
-        ctx.lineWidth = 8;
-        ctx.stroke();
-   });  
+$("#special").click(function(e){ 
+    var x = e.pageX - this.offsetLeft;
+    var y = e.pageY - this.offsetTop; 
+
+    ctx = this.getContext("2d");
+    ctx.beginPath();
+    
+    if (e.shiftKey) {                 // Miss
+      ctx.beginPath();
+      ctx.lineWidth = 6;
+      ctx.moveTo(x - 10, y - 10);
+      ctx.lineTo(x + 10, y + 10);      
+      ctx.strokeStyle="#E55934";
+      ctx.shadowBlur = 4;
+      ctx.shadowColor = "white";
+      ctx.stroke();
+      ctx.moveTo(x + 10, y - 10);
+      ctx.lineTo(x - 10, y + 10);      
+      ctx.strokeStyle="#E55934";
+      ctx.shadowBlur = 4;
+      ctx.shadowColor = "white";
+      ctx.stroke();
+    } else {                          // Make
+      ctx.arc(x, y, 10,0, 2*Math.PI);
+      ctx.lineWidth = 6;
+      ctx.strokeStyle="#00A878";       
+      ctx.shadowBlur = 4;
+      ctx.shadowColor = "white";
+      ctx.stroke();
+    }
+    
+});  
 
 //$("#twoMade").keypress(function(event){
   //if ( event.which == 38 ) {
